@@ -10,7 +10,7 @@ function App() {
         setCount(count + 1);
     }
     let resetCount = () => {
-        setCount(count = 0)
+        setCount(0)
     }
 
     return (
