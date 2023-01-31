@@ -5,7 +5,7 @@ type PropsType={
 export const Reset = (props:PropsType) => {
     return (
         <div>
-            <button>reset</button>
+            <button onClick={props.resetCount}>reset</button>
         </div>
     );
 };

@@ -5,7 +5,7 @@ type PropsType={
 export const Inc = (props:PropsType) => {
     return (
         <div>
-            <button>Inc</button>
+            <button onClick={props.addCount}>Inc</button>
         </div>
     );
 };
