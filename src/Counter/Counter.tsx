@@ -9,7 +9,6 @@ type PropsType = {
     resetCount: () => void
 }
 
-
 export const Counter = (props: PropsType) => {
     return (
         <div>
