@@ -14,8 +14,14 @@ export const Counter = (props: PropsType) => {
         <div>
             <Monitor count={props.count}/>
             <div>
-                <Inc addCount={props.addCount}/>
-                <Reset resetCount={props.resetCount}/>
+                <Inc
+                    addCount={props.addCount}
+                    count={props.count}
+                />
+                <Reset
+                    resetCount={props.resetCount}
+                    count={props.count}
+                />
             </div>
         </div>
     );
