@@ -6,16 +6,20 @@ import {Counter} from "./Counter/Counter";
 
 function App() {
     let [count, setCount] = useState(0)
-    let addCount = () =>{
-        setCount(count +1);
+    let addCount = () => {
+        setCount(count + 1);
     }
-    let resetCount = () =>{
+    let resetCount = () => {
         setCount(count = 0)
     }
 
     return (
         <div className="App">
-            <Counter/>
+            <Counter
+            count={count}
+            addCount={addCount}
+            resetCount={resetCount}
+            />
         </div>
     );
 }

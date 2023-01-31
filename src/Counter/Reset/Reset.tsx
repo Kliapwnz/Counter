@@ -1,6 +1,8 @@
 import React from 'react';
-
-export const Reset = () => {
+type PropsType={
+    resetCount:()=>void
+}
+export const Reset = (props:PropsType) => {
     return (
         <div>
             <button>reset</button>

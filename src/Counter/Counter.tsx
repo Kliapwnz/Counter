@@ -3,13 +3,20 @@ import {Inc} from "./Inc/Inc";
 import {Monitor} from "./Monitor/Monitor";
 import {Reset} from "./Reset/Reset";
 
-export const Counter = () => {
+type PropsType = {
+    count: number
+    addCount: () => void
+    resetCount: () => void
+}
+
+
+export const Counter = (props: PropsType) => {
     return (
         <div>
-            <Monitor/>
+            <Monitor count={props.count}/>
             <div>
-                <Inc/>
-                <Reset/>
+                <Inc addCount={props.addCount}/>
+                <Reset resetCount={props.resetCount}/>
             </div>
         </div>
     );

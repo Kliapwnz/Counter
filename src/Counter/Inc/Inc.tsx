@@ -1,6 +1,8 @@
 import React from 'react';
-
-export const Inc = () => {
+type PropsType={
+    addCount:()=>void
+}
+export const Inc = (props:PropsType) => {
     return (
         <div>
             <button>Inc</button>

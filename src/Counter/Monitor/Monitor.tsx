@@ -1,9 +1,11 @@
 import React from 'react';
-
-export const Monitor = () => {
+type PropsType={
+    count:number
+}
+export const Monitor = (props:PropsType) => {
     return (
         <div>
-            <div className="display"></div>
+            <div className="display">{props.count}</div>
         </div>
     );
 };
