@@ -3,10 +3,12 @@ type PropsType={
     addCount:()=>void
     count:number
 }
+const maxValue = 5
+
 export const Inc = (props:PropsType) => {
     return (
         <div>
-            <button disabled={props.count === 5} onClick={props.addCount}>Inc</button>
+            <button disabled={props.count === maxValue} onClick={props.addCount}>Inc</button>
         </div>
     );
 };
