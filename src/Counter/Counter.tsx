@@ -12,8 +12,11 @@ type PropsType = {
 
 export const Counter = (props: PropsType) => {
     return (
-        <div>
-            <Monitor count={props.count}/>
+        <div className="counter">
+            <Monitor
+                count={props.count}
+                maxValue={props.maxValue}
+            />
             <div>
                 <Inc
                     addCount={props.addCount}

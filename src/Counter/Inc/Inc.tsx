@@ -8,9 +8,7 @@ type PropsType={
 
 export const Inc = (props:PropsType) => {
     return (
-        <div>
-            <button disabled={props.count === props.maxValue} onClick={props.addCount}>Inc</button>
-        </div>
+            <button disabled={props.count === props.maxValue} onClick={props.addCount} className="button">Inc</button>
     );
 };
 

@@ -5,9 +5,7 @@ type PropsType={
 }
 export const Reset = (props:PropsType) => {
     return (
-        <div>
-            <button disabled={props.count === 0} onClick={props.resetCount}>reset</button>
-        </div>
+            <button disabled={props.count === 0} onClick={props.resetCount} className="button">reset</button>
     );
 };
 
