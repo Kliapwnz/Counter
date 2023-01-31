@@ -2,13 +2,14 @@ import React from 'react';
 type PropsType={
     addCount:()=>void
     count:number
+    maxValue:number
 }
-const maxValue = 5
+
 
 export const Inc = (props:PropsType) => {
     return (
         <div>
-            <button disabled={props.count === maxValue} onClick={props.addCount}>Inc</button>
+            <button disabled={props.count === props.maxValue} onClick={props.addCount}>Inc</button>
         </div>
     );
 };

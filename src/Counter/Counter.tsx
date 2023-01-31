@@ -7,6 +7,7 @@ type PropsType = {
     count: number
     addCount: () => void
     resetCount: () => void
+    maxValue: number
 }
 
 export const Counter = (props: PropsType) => {
@@ -17,6 +18,7 @@ export const Counter = (props: PropsType) => {
                 <Inc
                     addCount={props.addCount}
                     count={props.count}
+                    maxValue={props.maxValue}
                 />
                 <Reset
                     resetCount={props.resetCount}

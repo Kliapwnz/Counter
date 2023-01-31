@@ -12,6 +12,7 @@ function App() {
     let resetCount = () => {
         setCount(0)
     }
+    const maxValue = 5
 
     return (
         <div className="App">
@@ -19,6 +20,7 @@ function App() {
             count={count}
             addCount={addCount}
             resetCount={resetCount}
+            maxValue={maxValue}
             />
         </div>
     );
